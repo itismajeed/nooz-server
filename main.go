@@ -1,9 +1,10 @@
 package main
 
 import (
-	"fmt"
+	"nooz-server/app"
 )
 
 func main(){
-	fmt.Println("initial test")
+	app:=app.New()
+	app.Server.ServeHTTP()
 }
